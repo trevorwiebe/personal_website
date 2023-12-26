@@ -1,0 +1,96 @@
+:root {
+    --primary: #fffaf1;
+    --secondary: #ffffff;
+    --accent: #3b5249;
+}
+
+body{
+    width: 100%;
+    font-family: 'Merriweather', serif;
+    background-color: var(--primary);
+}
+
+#main_container{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#social_media_container{
+    text-align: center;
+    padding: 20px;
+}
+
+#contact_container{
+    text-align: center;
+    padding: 20px;
+}
+
+.title_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#avatar{
+    width: 200px;
+    height: 200px;
+}
+
+.title{
+    font-weight: normal;
+    margin-top: 0px;
+    margin-right: 5px;
+}
+
+.title_link{
+    font-weight: normal;
+    margin-top: 0px;
+    margin-right: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.contact_p{
+    font-size: 18px;
+}
+
+.title_link:hover{
+    text-decoration: underline;
+}
+
+#linkedin {
+    width: 45px;
+    padding: 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+#github{
+    width: 40px;
+    padding: 10px;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+#linkedin:hover, #github:hover{
+    transition: 0.2s;
+    box-shadow: 1px 1px 5px var(--accent);
+    background-color: var(--secondary);
+}
+
+.social_a{
+    text-decoration: none;
+}
+
+#email{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#email:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+  
