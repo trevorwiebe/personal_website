@@ -11,7 +11,7 @@ body{
 }
 
 #main_container{
-    margin-top: 50px;
+    margin-top: 25px;
     text-align: center;
 }
 
@@ -51,6 +51,43 @@ body{
     color: black;
 }
 
+#menu_container{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#menu_div{
+    width: 500px;
+    height: 55px;
+    background-color: var(--accent);
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.menu_item{
+    color: var(--accent);
+    background-color: var(--primary);
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.menu_item:hover{
+    background-color: var(--secondary);
+    padding: 7px;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .contact_p{
     font-size: 18px;
 }
@@ -62,14 +99,14 @@ body{
 #linkedin {
     width: 45px;
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 10px;
     margin-right: 10px;
 }
 
 #github{
     width: 40px;
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 10px;
     margin-left: 10px;
 }
 
