@@ -61,8 +61,8 @@ body{
 #menu_div{
     width: 500px;
     height: 55px;
-    background-color: var(--accent);
-    border-radius: 30px;
+    background-color: var(--primary);
+    border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -70,19 +70,19 @@ body{
 }
 
 .menu_item{
-    color: var(--accent);
-    background-color: var(--primary);
-    border-radius: 20px;
-    padding: 5px;
+    color: var(--secondary);
+    background-color: var(--accent);
+    border-radius: 10px;
+    padding: 10px;
     font-size: 18px;
     letter-spacing: 1px;
-    margin: 10px;
+    margin: 7px;
+    text-decoration: none;
     font-family: 'Oswald', sans-serif;
 }
 
 .menu_item:hover{
-    background-color: var(--secondary);
-    padding: 7px;
+    padding: 13px;
     transition: 0.5s;
     cursor: pointer;
     text-decoration: underline;
