@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald:wght@500&display=swap" rel="stylesheet">
+        <title>Connect to Linux with SSH</title>
+    </head>
+    <body>
+
+        <!-- Include the empty container for the header -->
+        <div class="header-container"></div>
+
+        <!-- Include the header.js script -->
+        <script src="/ui_elements/header/header_code.js"></script>
+
+        <div id="main_container">
+            <div class="side_block"></div>
+            <div id="blog_block">
+                <h1>Connect two Linux servers with SSH without using a password</h1>
+                <img id="connect_image"src="/res/connect_linux_ssh_img.jpg"/>
+                <p>Connecting two Linux servers with SSH is an easy thing to do. It's not something that needs to be done often, but I never remember how to do it. It seems hard find a good guide so I decided to create one myself for my own reference.</p>
+                <p>In this example server 1 is the host or the server to be connected to and server 2 is the client or th eserver initiating the connection.</p>
+                <p>This example was tested on Fedora 38.</p>
+                <p>Make sure SSH is installed on both servers.</p>
+                <p>Once SSH is installed you can connect by entering the following:  Enter your password when prompted.</p>
+                <div class="code_block_container" data-content="ssh root@'server-1-ip'"></div>
+                <script src="/ui_elements/code_block/code_block_code.js"></script>
+                <p>You can also use <a href="https://www.putty.org" target="_blank">putty</a> to log into your servers.</p>
+                <p>You should now be signed into server 1.</p>
+                <p>Now we can generate the public/private key pairs:</p>
+                <div class="code_block_container" data-content="ssh-keygen -t rsa"></div>
+                <p>Press enter to accept all the defaults.</p>
+                <div class="code_block_container" data-content="Generating public/private ecdsa key pair.
+Enter file in which to save the key (/home/fedora/.ssh/id_ecdsa): # Enter or input changes if you want
+Created directory '/home/fedora/.ssh'.
+Enter passphrase (empty for no passphrase): # set passphrase (if set no passphrase, Enter with empty)
+Enter same passphrase again:
+Your identification has been saved in /home/fedora/.ssh/id_rsa
+Your public key has been saved in /home/fedora/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:wSyYOTG4k5CeFoJWday3Am8EDLI0VACF5/QpE5bc6aE
+The key's randomart image is:
++--[ DSA 1024]----+
+|            o.o  |
+|            .= E.|
+|             .B.o|
+|              .= |
+|        S     = .|
+|       . o .  .= |
+|        . . . oo.|
+|             . o+|
+|              .o.|
++-----------------+"></div>
+                <p>Now on another window, sign into server 2 and open the known_hosts file</p>
+                <div class="code_block_container" data-content="vi ~/.ssh/known_hosts"></div>
+                <p>Back on server 1 open the public key file</p>
+                <div class="code_block_container" data-content="vi ~/.ssh/id_rsa.pub"></div>
+                <p>Copy the public key from server 1 to the known_hosts file in server 2 and save by pressing 'esc' to exit edit mode and type,</p>
+                <div class="code_block_container" data-content=":wq"></div>
+                <p>You should new be able to sign into server 1 from server 2 without needing a password.</p>
+                <div class="code_block_container" data-content="ssh root@'server-1-ip' <br>root@localhost:~#"></div>
+                <p>That's it for now, thanks and take care!</p>
+            </div>
+            <div class="side_block"></div>
+        </div>
+
+    </body>
+</html>

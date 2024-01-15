@@ -1,0 +1,49 @@
+:root {
+    --primary: #fffaf1;
+    --secondary: #ffffff;
+    --accent: #3b5249;
+}
+
+body{
+    /* width: 100%; */
+    font-family: 'Merriweather', serif;
+    background-color: var(--primary);
+}
+
+.side_block{
+    width: 20%;
+}
+
+#blog_block{
+    width: 60%;
+}
+
+#main_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+#connect_image{
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    .side_block{
+        width: 10%;
+    }
+    #blog_block{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .side_block{
+        width: 2%;
+    }
+    #blog_block{
+        width: 96%;
+    }
+}
