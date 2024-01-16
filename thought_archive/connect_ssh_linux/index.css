@@ -5,7 +5,6 @@
 }
 
 body{
-    /* width: 100%; */
     font-family: 'Merriweather', serif;
     background-color: var(--primary);
 }
@@ -28,6 +27,11 @@ body{
 #connect_image{
     width: 100%;
     border-radius: 10px;
+}
+
+.blog_date{
+    margin-top: 10px;
+    color: var(--accent)
 }
 
 @media only screen and (max-width: 900px) {

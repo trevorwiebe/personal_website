@@ -5,7 +5,6 @@
 }
 
 body{
-    width: 100%;
     font-family: 'Merriweather', serif;
     background-color: var(--primary);
 }
@@ -43,10 +42,7 @@ body{
 
 .blog_title{
     color: var(--accent);
-    text-align: center;
     font-size: 32px;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
     text-decoration: none;
 }
 
@@ -56,18 +52,20 @@ body{
 }
 
 .blog_date{
-    text-align: center;
     margin-top: 10px;
     color: var(--accent)
 }
 
 .blog_blurb{
     color: #000000;
-    text-align: justify;
     padding-top: 20px;
     padding-left: 50px;
     padding-bottom: 50px;
     padding-right: 50px;
+}
+
+.blog_blurb_2{
+    text-align: left;
 }
 
 @media only screen and (max-width: 900px) {
