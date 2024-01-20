@@ -65,9 +65,7 @@ body{
 .project_logo{
     width: 100px;
     height: 100px;
-    margin-top: 25px;
-    margin-right: 25px;
-    margin-bottom: 25px;
+    margin: 25px;
 }
 
 .fake_images{
