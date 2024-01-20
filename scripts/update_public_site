@@ -1,0 +1,1 @@
+rsync -r --progress . --exclude=".git/" --exclude="README.md" --exclude="scripts/" trevorwi@192.185.68.17:public_html/
