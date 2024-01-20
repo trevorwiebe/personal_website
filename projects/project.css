@@ -129,6 +129,10 @@ body{
     #main_block{
         width: 80%;
     }
+    .project_images{
+        width: 262px;
+        height: 525px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -147,5 +151,9 @@ body{
     }
     #main_block{
         width: 96%;
+    }
+    .project_images{
+        width: 262px;
+        height: 525px;
     }
 }
