@@ -9,6 +9,12 @@ body{
     background-color: var(--primary);
 }
 
+#main_container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #main_block{
     width: 50%;
 }
@@ -17,7 +23,106 @@ body{
     width: 25%;
 }
 
+.project_block{
+    width: 100%;
+    /* background-color: var(--secondary);
+    border-radius: 10px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project_description_para{
+    text-align: justify;
+}
+
+.project_column_1{
+    width: 60%;
+}
+
+.project_column_2{
+    width: 5%;
+}
+
+.project_column_3{
+    width: 35%;
+    margin-top: 65px;
+}
+
+.project_column_4 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project_column_5{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project_logo{
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.fake_images{
+    width: 175px;
+    height: 350px;
+    background-color: var(--accent);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.project_images{
+    width: 175px;
+    height: 350px;
+    margin: 10px;
+}
+
+.title {
+    font-family: 'Oswald' sans-serif;
+    color: var(--accent);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project_description_title {}
+
+
+.skills_title{}
+
+.project_images_title{
+    width: 100%;
+}
+
+#track_a_cow_google_play_btn{
+    width: 375px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .side_block{
+        width: 12%;
+    }
+    #main_block{
+        width: 76%;
+    }
+}
+
 @media only screen and (max-width: 900px) {
+    .project_column_1{
+        width: 100%;
+    }
+    .project_column_2{
+        width: 0%;
+    }
+    .project_column_3{
+        width: 100%;
+        margin-top: 0px;
+    }
     .side_block{
         width: 10%;
     }
@@ -27,6 +132,16 @@ body{
 }
 
 @media only screen and (max-width: 600px) {
+    .project_column_1{
+        width: 100%;
+    }
+    .project_column_2{
+        width: 0%;
+    }
+    .project_column_3{
+        width: 100%;
+        margin-top: 0px;
+    }
     .side_block{
         width: 2%;
     }
