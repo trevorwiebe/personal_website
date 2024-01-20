@@ -13,6 +13,7 @@ body{
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 #main_block{
