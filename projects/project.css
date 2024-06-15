@@ -26,10 +26,16 @@ body{
 
 .project_block{
     width: 100%;
-    /* background-color: var(--secondary);
-    border-radius: 10px; */
     display: flex;
     flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.horizontal_divider{
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent);
 }
 
 .project_description_para{
@@ -100,6 +106,27 @@ body{
 
 #track_a_cow_google_play_btn{
     width: 375px;
+}
+
+/* Custom project css */
+#stanza_logo{
+    border-radius: 15px;
+}
+
+#stanza_in_dev{
+    width: 320px;
+    height: 90px;
+    margin: 25px;
+    border-radius: 15px;
+    border: var(--accent) solid 4px;
+    background-color: var(--secondary);
+}
+
+#stanza_in_dev_text{
+    text-align: center;
+    font-weight: bold;
+    margin: 15px;
+    margin-top: 23px;
 }
 
 @media only screen and (max-width: 1200px) {
